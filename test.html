@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        
+.our__work__columns {
+    display: flex;
+    width: 100%;
+    max-width: 100vw;
+    margin-top: 70px;
+}
+
+
+.our__work__column {    
+    flex: 1 1 0;
+}
+
+.works__item {
+    position: relative;
+    /* width: 100%; */
+
+
+}
+
+.works__item:hover .works__item__foreground{
+    opacity: 1;
+}
+
+.works__item img {
+    width: 100%;
+    max-width: calc(
+        100vw / 4
+    );
+    height: auto;
+    display: block;
+}
+
+.works__item__foreground {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, #fce38a, #f38181);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+.works__item__info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate3d(-50%, -50%, 0);
+
+    z-index: 5;
+
+    border: 6px solid white;
+    padding: auto;
+}
+
+.works__item__info {
+    width: 100%;
+
+    
+}
+
+.works__item__info img {
+    max-width: 30px;
+}
+
+.works__item__info__header {
+    width: 100%;
+}
+
+.works__item__info__text {
+    width: 100%;
+}
+    </style>
+    
+    <div class="our__work__column" id = "our__work__column__1">
+        <div class = "works__item">
+            <div class="works__item__foreground"></div>
+            <img class = "our__work__1-1" src="./assets/images/our__work/man__back.png" alt="man">
+            <div class="works__item__info">
+                <img src="./assets/images/svg/image__white.svg" alt="image">
+                <div class="works__item__info__header">creatively designed</div>
+                <div class="works__item__info__text">Lorem ipsum dolor sit</div>
+            </div>
+        </div>
+        <div class = "works__item">
+            <div class="works__item__foreground"></div>
+            <img class = "our__work__1-2" src="./assets/images/our__work/bridge__clouds.png" alt="bridge__clouds">
+        </div>
+    </div>
+
+</body>
+</html>
