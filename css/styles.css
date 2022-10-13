@@ -925,3 +925,154 @@
     width: 100%;
     height: 100%;
 }
+
+/* ? feedback */
+
+.feedback__wrapper {
+    margin: 60px auto;
+    display: flex;
+    align-items: center;
+}
+
+.feedback__wrapper::after {
+    content: "";
+    display: block;
+    background: transparent;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    transform: rotate(45deg);
+    width: 16px;
+    height: 16px;
+    margin-left: 25px;
+    cursor: pointer;
+
+    transition: all .2s linear;
+}
+
+.feedback__wrapper::before {
+    content: "";
+    display: block;
+    background: transparent;
+    border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    transform: rotate(-135deg);
+    width: 16px;
+    height: 16px;
+    margin-right: 25px;
+    cursor: pointer;
+
+    transition: all .2s linear;
+
+}
+
+
+.feedback {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    width: 800px;
+    justify-content: space-between;
+}
+
+.feedback__text {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    max-width: 570px;
+    text-align: left;
+}
+
+.feedback__author {
+    color: #333333;
+    font-family: 'Kaushan Script', cursive;
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.feedback__author::before {
+    content: "";
+    display: block;
+    background: #f38181;
+    width: 60px;
+    height: 3px;
+}
+
+
+/* ! what people say */
+
+.people__say {
+    height: 100vh;
+    background-color: #d9d9d9;
+    background: url("../assets/images/backgrounds/mountain.png") no-repeat;
+    background-size: cover;
+}
+
+.section__text--people {
+    padding-top: 50px;
+}
+
+.people__say__columns {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.people__item {
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.people__item__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    padding-left: 20px;
+}
+
+.people__item__content__header {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.people__item__content__header::after {
+    content: "";
+    display: flex;
+    width: 60px;
+    height: 3px;
+    background: #f38181;
+    margin-top: 20px;
+}
+
+.people__header {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    padding-bottom: 6px;
+}
+
+.people__title {
+    font-family: 'Roboto', sans-serif;   
+    color: #333333;
+    font-size: 15px;
+    font-weight: light;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.people__item__content__text {
+    color: #999999;
+    font-family: 'Roboto', sans-serif;   
+    font-size: 15px;
+    text-align: left;
+}
+
+.people__right {
+    max-width: 50%;
+}
+
+.people__left {
+    max-width: 50%;
+}
